@@ -1,0 +1,124 @@
+baseURL: http://example.org/
+languageCode: zh-CN
+title: 武汉 KUG
+theme: "hugo-PaperMod"
+enableRobotsTXT: true
+
+buildDrafts: true
+buildFuture: true
+buildExpired: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: 武汉 KUG
+  description: "武汉 Kotlin 用户组"
+  keywords:
+    [
+      Kotlin,
+      Kotlin User Group,
+      Wuhan Kotlin User Group,
+      武汉 Kotlin 用户组,
+      KUG,
+      Wuhan KUG,
+      武汉 KUG,
+    ]
+  author: gzkug
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "kug-wuhan-icon.png"
+
+  label:
+    text: "武汉 KUG"
+
+  profileMode:
+    enabled: true
+    title: "武汉 KUG"
+    subtitle: Hi, 这里是武汉 KUG，欢迎所有对 Kotlin 感兴趣的开发者加入我们的组织
+    imageUrl: "kug-logo.png"
+    imageTitle: "KUG logo"
+    imageWidth: 240
+    imageHeight: 240
+
+  socialIcons:
+    - name: GitHub
+      url: "https://github.com/wuhan-kug"
+    - name: Email
+      url: "mailto:qcuncle@gmail.com"
+
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: events
+      name: 历史活动
+      url: https://github.com/wuhan-kug/events/issues
+      weight: 1
+    - identifier: official
+      name: 全球 KUGs
+      url: https://kotlinlang.org/community/user-groups/
+      weight: 2
+
+publishDir: ./public
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai

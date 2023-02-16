@@ -1,4 +1,4 @@
-baseURL: https://wuhan-kug.github.io
+baseURL: https://wuhan-kug.github.io/
 languageCode: zh-CN
 title: 武汉 KUG
 theme: "hugo-PaperMod"
@@ -26,7 +26,7 @@ params:
       Wuhan KUG,
       武汉 KUG,
     ]
-  author: gzkug
+  author: wuhan-kug
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 

@@ -40,18 +40,25 @@ params:
 
   profileMode:
     enabled: true
-    title: "武汉 KUG"
-    subtitle: Hi, 这里是武汉 KUG，欢迎所有对 Kotlin 感兴趣的开发者加入我们的组织
+    title: "Wuhan Kotlin User Group"
+    subtitle: Hi, 这里是武汉 KUG，欢迎所有对 Kotlin 感兴趣的开发者加入我们的组织。
+    content: 
+      - 在这里可以和其它成员一起学习、讨论技术问题 📚
+      - 我们还会不定期举行研讨会，进行与 Kotlin 相关的主题分享与讨论
+      - 联系我们：添加组织者微信 [QCuncle] 备注 KUG，邀请入群
+    
     imageUrl: "kug-logo.png"
     imageTitle: "KUG logo"
-    imageWidth: 240
-    imageHeight: 240
+    imageWidth: 360
+    imageHeight: 360
 
   socialIcons:
     - name: GitHub
       url: "https://github.com/wuhan-kug"
     - name: Email
       url: "mailto:qcuncle@gmail.com"
+    - name: Telegram
+      url: "https:t.me/+HU7h75Mh4X5kNjM9"
 
   ShowReadingTime: false
   ShowShareButtons: true
